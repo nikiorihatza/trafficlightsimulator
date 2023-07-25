@@ -1,0 +1,124 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #454545;
+}
+
+.traffic-light {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+  background-color: #262626;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+h1 {
+  color: white !important;
+  font-size: 30;
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+}
+
+.light {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin: 5px;
+}
+
+.red {
+  background-color: red;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.green {
+  background-color: green;
+}
+
+.pedestrian-signal {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.pedestrian-signal .light {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin: 5px;
+}
+
+.pedestrian-red {
+  background-color: red;
+}
+
+.pedestrian-green {
+  background-color: green;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+}
+
+button {
+  margin: 5px;
+}
+
+.flashing {
+  animation: flash 1s infinite;
+}
+
+@keyframes flash {
+  50% {
+    opacity: 0;
+  }
+}
+
+:root {
+  --page-background: 277deg, 55%, 12%;
+}
+
+.controls {
+  padding: 3em;
+  position: relative;
+  z-index: 1;
+}
+
+/* CSS for rounded buttons */
+button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #4CAF50; /* Change the background color to your preference */
+  color: white; /* Change the text color to your preference */
+  font-size: 16px;
+  border: none;
+  border-radius: 20px; /* Adjust the border-radius value to control the roundness */
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+}
+
+/* Style for when the button is hovered */
+button:hover {
+  background-color: #45a049; /* Change the background color on hover */
+}
+
+/* Style for when the button is clicked or active */
+button:active {
+  background-color: #3e8e41; /* Change the background color when active */
+}
+
+button:disabled {
+  background-color: #555555;
+}
